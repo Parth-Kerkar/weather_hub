@@ -1,0 +1,287 @@
+body {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #1f2937;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/cloudy-day.png');
+}
+
+/* Ensure header is centered */
+/* Header container styling */
+.header {
+  display: flex;
+  justify-content: center;   /* centers the content horizontally */
+  align-items: center;       /* vertically centers the content */
+  padding: 20px;
+  background: linear-gradient(to right, #ffecd2, #fcb69f); /* light blue gradient */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo and title */
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;               /* space between icon and text */
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Logo size */
+.logo-icon {
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+section {
+  padding: 1.5rem;
+}
+
+section h2, section h3, section h4 {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.forecast {
+  background-color: rgba(219, 234, 254, 0.8);
+  text-align: center;
+}
+
+.weather-display {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  width: 16rem;
+}
+
+.aqi-box {
+  background-color: #d1fae5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.alerts {
+  background-color: #fef9c3;
+}
+
+.alert-box {
+  background-color: #ffffff;
+  border-left: 4px solid #facc15;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.suggestions .suggestion-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.suggestion-card {
+  background-color: #bfdbfe;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.trivia {
+  background-color: #f3f4f6;
+}
+
+.trivia-box {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-style: italic;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Joke Box */
+.joke-box {
+  background-color: #f0abfc;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Center the button */
+.joke-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button Styles + Animation */
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+  animation: bounce 0.4s ease;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+body {
+  background-image: url('images/background.png'); /* adjust path if needed */
+  background-size: cover; /* or use 'contain' or specific size */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* makes background stay in place on scroll */
+}
+
+
+/* === Stylish Quiz Layout and Animation === */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f2fe, #f0f9ff);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeIn 0.8s ease;
+}
+
+#quiz-box, #achievement-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+#quiz-box:hover, #achievement-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Quiz Title */
+#quiz-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Question Text */
+#question-text {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+/* Options Styling */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  background-color: #e0f2fe;
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1e3a8a;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Achievement Box */
+#achievement-box h3 {
+  font-size: 1.3rem;
+  color: #10b981;
+  margin-bottom: 10px;
+}
+
+#achievement-box p {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+

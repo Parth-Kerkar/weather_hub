@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Info Hub</title>
+  <link href="styles.css" rel="stylesheet">
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="site-title">
+      <img src="images/icon.png" alt="Weather Icon" class="logo-icon" />
+      Weather Info Hub
+    </h1>
+  </header>
+  
+  
+
+  <!-- Weather Forecast -->
+  <section class="forecast">
+    <h2>Enter City Name</h2>
+    <input type="text" id="city-input" placeholder="Enter city..." class="search-bar" />
+    <button onclick="getWeatherData()">Get Weather</button>
+
+    <!-- City Comparison -->
+    <h3>Compare Weather</h3>
+    <input type="text" id="city-input-1" placeholder="Enter first city" />
+    <input type="text" id="city-input-2" placeholder="Enter second city" />
+    <button onclick="compareCities()">Compare</button>
+
+    <div id="weather-display" class="weather-display"></div>
+    <div id="comparison-display" class="weather-display"></div>
+  </section>
+
+  <!-- Air Quality Index -->
+  <section class="aqi">
+    <h2>Air Quality Index</h2>
+    <div id="aqi-box" class="aqi-box"></div>
+  </section>
+
+  <!-- Weather Alerts -->
+  <section class="alerts">
+    <h2>Weather Alerts</h2>
+    <div id="alert-box" class="alert-box"></div>
+  </section>
+
+  <!-- Clothing & Activity Suggestions -->
+  <section class="suggestions">
+    <h2>Today's Suggestions</h2>
+    <div id="suggestions" class="suggestion-grid"></div>
+  </section>
+
+  <!-- Weather Trivia -->
+  <section class="trivia">
+    <h2>Did You Know?</h2>
+    <div class="trivia-box">
+      <p>“The highest temperature ever recorded on Earth was 56.7°C (134°F) in Death Valley, California in 1913.”</p>
+    </div>
+  </section>
+
+  <!-- Weather Joke Section -->
+  <section class="joke-section">
+    <h2>Weather Giggle</h2>
+    <div id="joke-box" class="joke-box">Why don’t clouds ever get lost? They always follow the current trends!</div>
+    <button onclick="showJoke()">Get Another Joke</button>
+  </section>
+
+  <!-- Quiz and Achievement -->
+  <div class="container">
+    <!-- Left Section: Quiz -->
+    <div id="quiz-box">
+      <div id="quiz-title">🌦️ Weather Quiz</div>
+      <p id="question-text">Loading question...</p>
+      <div id="options"></div>
+    </div>
+
+    <!-- Right Section: Achievement Badge -->
+    <div id="achievement-box">
+      <h3>🎖️ Achievement</h3>
+      <p>Answer the quiz to earn your badge!</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Weather Info Hub. Powered by OpenWeather API & AQICN.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+</html>
