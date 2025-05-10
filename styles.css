@@ -175,7 +175,7 @@ button:hover {
 }
 
 body {
-  background-image: url('images/background.png'); /* adjust path if needed */
+  background-image: url('background.png'); /* adjust path if needed */
   background-size: cover; /* or use 'contain' or specific size */
   background-repeat: no-repeat;
   background-position: center;
