@@ -1,5 +1,5 @@
 // Replace with your actual API keys
-const WEATHER_API_KEY = "68b81e3893431d58a898cc15c29e4933";
+const WEATHER_API_KEY = "d8fab6cefb55c7ee162cb30098648430";
 const AQI_API_KEY = "0eba232661f29c16657f1f3bc8d3244069397613";
 
 async function getWeatherData() {
